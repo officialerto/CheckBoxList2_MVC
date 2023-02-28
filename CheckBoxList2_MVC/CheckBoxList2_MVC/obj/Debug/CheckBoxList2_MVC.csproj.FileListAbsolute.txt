@@ -74,3 +74,7 @@ C:\Users\Ertugrul\source\repos\CheckBoxList2_MVC\CheckBoxList2_MVC\obj\Debug\Che
 C:\Users\Ertugrul\source\repos\CheckBoxList2_MVC\CheckBoxList2_MVC\obj\Debug\CheckBoxList2_MVC.csproj.CopyComplete
 C:\Users\Ertugrul\source\repos\CheckBoxList2_MVC\CheckBoxList2_MVC\obj\Debug\CheckBoxList2_MVC.dll
 C:\Users\Ertugrul\source\repos\CheckBoxList2_MVC\CheckBoxList2_MVC\obj\Debug\CheckBoxList2_MVC.pdb
+C:\Users\Ertugrul\Documents\GitHub\CheckBoxList2_MVC\CheckBoxList2_MVC\CheckBoxList2_MVC\obj\Debug\CheckBoxList2_MVC.csproj.AssemblyReference.cache
+C:\Users\Ertugrul\Documents\GitHub\CheckBoxList2_MVC\CheckBoxList2_MVC\CheckBoxList2_MVC\obj\Debug\CheckBoxList2_MVC.csproj.CoreCompileInputs.cache
+C:\Users\Ertugrul\Documents\GitHub\CheckBoxList2_MVC\CheckBoxList2_MVC\CheckBoxList2_MVC\obj\Debug\CheckBoxList2_MVC.dll
+C:\Users\Ertugrul\Documents\GitHub\CheckBoxList2_MVC\CheckBoxList2_MVC\CheckBoxList2_MVC\obj\Debug\CheckBoxList2_MVC.pdb

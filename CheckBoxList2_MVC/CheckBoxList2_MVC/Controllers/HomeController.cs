@@ -10,7 +10,9 @@ namespace CheckBoxList2_MVC.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+
+        
+
         public ActionResult Index()
         {
             CourseDBEntities courseDBEntities = new CourseDBEntities();
