@@ -6,7 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="5ad8b88ec56c4007be6cfe3d1ccedd85" Name="Diagram1">
         <EntityTypeShape EntityType="CourseDBModel.Language" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CourseDBModel.StudentCours" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CourseDBModel.StudentCourses" Width="2.25" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CourseDBModel.Student" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>

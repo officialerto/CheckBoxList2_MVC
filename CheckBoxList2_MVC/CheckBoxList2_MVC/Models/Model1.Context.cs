@@ -26,7 +26,7 @@ namespace CheckBoxList2_MVC.Models
         }
     
         public virtual DbSet<Language> Languages { get; set; }
-        public virtual DbSet<StudentCours> StudentCourses { get; set; }
+        public virtual DbSet<StudentCourses> StudentCourses { get; set; }
         public virtual DbSet<Student> Students { get; set; }
     }
 }

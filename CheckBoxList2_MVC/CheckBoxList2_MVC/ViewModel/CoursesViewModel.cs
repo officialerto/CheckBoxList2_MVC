@@ -9,5 +9,7 @@ namespace CheckBoxList2_MVC.ViewModel
     {
         public int CourseId { get; set; }
         public string CourseName { get; set; }
+
+        public bool IsSelected { get; set; }
     }
 }

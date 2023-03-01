@@ -7,7 +7,7 @@
     <Property Name="LanguageId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="LanguageName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
-  <EntityType Name="StudentCours">
+  <EntityType Name="StudentCourses">
     <Key>
       <PropertyRef Name="StudentId" />
       <PropertyRef Name="CourseId" />
@@ -24,7 +24,7 @@
   </EntityType>
   <EntityContainer Name="CourseDBEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Languages" EntityType="Self.Language" />
-    <EntitySet Name="StudentCourses" EntityType="Self.StudentCours" />
+    <EntitySet Name="StudentCourses" EntityType="CourseDBModel.StudentCourses" />
     <EntitySet Name="Students" EntityType="Self.Student" />
   </EntityContainer>
 </Schema>

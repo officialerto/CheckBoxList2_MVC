@@ -1,7 +1,75 @@
-﻿
+﻿@model CheckBoxList2_MVC.ViewModel.StudentCoursesViewModel
+
 @{
     ViewBag.Title = "Index";
 }
+<script src="~/Scripts/jquery-3.6.3.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnSave").click(function () {
+            AddStudentAndCourses();
+        });
+    });
 
-<h2>Index</h2>
+    function AddStudentAndCourses() {
+        var listOfCourseId = [];
+        $.each($("#tableCourses input[type=checkbox]:checked"),
+            function (index, data) {
+                listOfCourseId.push($(this).val());
+
+            });
+
+        $.ajax({
+            async: true,
+            type: 'POST',
+            dataType: 'JSON',
+            contentType: 'application/json; charset=utf-8',
+            url: /Home/Index,
+            data: JSON.stringify({ studentId: $("#ddStudent").val(), listOfCourseId: listOfCourseId }),
+            success: function (data) {
+                if (data.success == true) {
+                    alert(data.message);
+                }
+            },
+            error: function() {
+                alert('There is some problem');
+            }
+
+        });
+    }
+</script>
+
+<h2>Assign Student to Courses</h2>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { }))
+{
+    <div class="container">
+        <div class="row">
+            <div class="form-group">
+                @Html.LabelFor(model => model.StudentId, new { @class = "control-label" })
+                @Html.DropDownListFor(model => model.StudentId, Model.ListOfStudents,
+               new { @class = "form-control", @id="ddStudent"})
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                @Html.LabelFor(model => model.CourseId, new { @class = "control-label" })
+                <table style="width:100%" id="tableCourses">
+                    @foreach (var item in Model.ListOfCourses)
+                    {
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="@item.CourseName" value="@item.CourseId" checked="@item.IsSelected" />@item.CourseName
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+        <div>
+            <input type="button" name="Save" id="btnSave" value="Save" class="btn btn-primary" />
+        </div>
+    </div>
+}
 

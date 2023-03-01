@@ -10,7 +10,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="StudentCourses">
-      <EntityTypeMapping TypeName="CourseDBModel.StudentCours">
+      <EntityTypeMapping TypeName="CourseDBModel.StudentCourses">
         <MappingFragment StoreEntitySet="StudentCourses">
           <ScalarProperty Name="StudentId" ColumnName="StudentId" />
           <ScalarProperty Name="CourseId" ColumnName="CourseId" />
